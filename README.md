@@ -1,5 +1,8 @@
 # Minha Jornada no Front-end
 
+## [Login](https://leon-augusto.github.io/templates/Login/)
+Projeto desenvolvido no [Módulo 4 do Curso de HTML5 e CSS3, pelo Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT).
+
 ## [Redes Sociais](https://leon-augusto.github.io/templates/Redes%20Sociais/)
 Projeto desenvolvido no [Módulo 4 do Curso de HTML5 e CSS3, pelo Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT).
 

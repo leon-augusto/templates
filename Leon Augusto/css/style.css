@@ -90,7 +90,7 @@ section{
     text-align: center;
 }
 
-.header .user img{
+/* .header & .home */ .user img{
     margin:1rem 0;
     border:1rem solid transparent;
     border-radius: 50%;
@@ -109,11 +109,11 @@ section{
     font-size: 1.5rem;
 }
 
-.header .navbar{
+/* .header & .home */ .navbar{
     padding-top: 1rem;
 }
 
-.header .navbar a{
+/* .header & .home */ .navbar a{
     display: block;
     margin:1.5rem 0;
     padding:.7rem;
@@ -123,7 +123,7 @@ section{
     color:var(--black);
 }
 
-.header .navbar a:hover{
+/* .header & .home */ .navbar a:hover{
     box-shadow: var(--box-shadow-inset);
     color: var(--blue);
 }
@@ -148,6 +148,17 @@ section{
 #menu-btn:hover{
     color:var(--blue);
     box-shadow: var(--box-shadow-inset);
+}
+
+#menu-btn > #mobile_navbar{
+    display: none;
+}
+
+#menu-btn > #mobile_navbar > a{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: var(--bg-color);
 }
 
 .home{

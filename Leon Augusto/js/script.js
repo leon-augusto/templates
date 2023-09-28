@@ -9,3 +9,21 @@ themeToggler.onclick = () =>{
         document.body.classList.remove('active');
     }
 }
+
+function openMenu() {
+    if (mobile_navbar.style.display == 'block') {
+        mobile_navbar.style.display = 'none'
+    } else {
+        mobile_navbar.style.display = 'block'
+    }
+}
+
+function makeView() {
+    if (window.innerWidth >= 991) {
+        mobile_navbar.style.display = 'block'
+        user.style.display = 'none'
+    } else {
+        mobile_navbar.style.display = 'none'
+        user.style.display = 'block'
+    }
+}

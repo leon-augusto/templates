@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body onresize="makeView()" onload="makeView()">
     <header class="header">
 
         <div class="user">
@@ -32,12 +32,23 @@
 
     </header>
 
-    <div id="menu-btn" class="fas fa-bars"></div>
+    <div id="menu-btn" class="fas fa-bars" onclick="openMenu()">
+        <nav class="navbar" id="mobile_navbar">
+            <a href="#home"><i class="fas fa-home"></i></a>
+            <a href="#about"><i class="fas fa-user"></i></a>
+            <a href="#services"><i class="fas fa-user-secret"></i></a>
+            <a href="#portfolio"><i class="fas fa-laptop-code"></i></a>
+            <a href="#contact"><i class="fas fa-envelope"></i></a>
+        </nav>
+    </div>
 
     <div id="theme-toggler" class="fas fa-moon"></div>
 
     <main>
         <section class="home" id="home">
+            <div class="user" id="user">
+                <img src="./img/user" alt="">
+            </div>
 
             <div class="content">
                 <h3>Leon Augusto</h3>

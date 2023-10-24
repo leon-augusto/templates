@@ -14,7 +14,8 @@
     padding: 0px;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--font-default);
@@ -29,7 +30,7 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-header > h1 {
+header>h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--font-title);
@@ -40,17 +41,19 @@ span {
     color: firebrick;
 }
 
-header > p {
+header>p {
     padding-bottom: 50px;
 }
 
-header a, footer a {
+header a,
+footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
+header a:hover,
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -63,7 +66,7 @@ section {
     font-size: 3.5vw;
 }
 
-section > p {
+section>p {
     padding-bottom: 2em;
 }
 
@@ -73,7 +76,7 @@ section.texto {
 }
 
 #poesia {
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 2s ease-in-out;
 }
 
@@ -86,14 +89,18 @@ section.imagem {
     height: 50vh;
 }
 
-section#img01{
+section#img01 {
     background-image: url('../img/lore01.jpg');
     background-position: center top;
 }
 
-section#img02{
+section#img02 {
     background-image: url('../img/lore02.jpg');
     background-position: center;
+}
+
+section#img_to_no_mobile {
+    display: none;
 }
 
 footer {
@@ -101,4 +108,45 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    section.imagem {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    section {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    section.texto {
+        line-height: 2em;
+        padding-left: 30px;
+        font-family: var(--font-main);
+        font-size: 2vw;
+    }
+
+    section>p {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    section#img_to_no_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40vw;
+    }
+
+    section#img_to_no_mobile img {
+        width: 95%;
+        padding-bottom: 2em;
+    }
 }
